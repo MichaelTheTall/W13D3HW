@@ -34,4 +34,23 @@ public class WhiskyRepositoryImpl implements WhiskyRepositoryCustom {
 
         return results;
     }
+
+    @Transactional
+    public List<Whisky> getWhiskyByDistilleryAndAge(String dist_name, int age){
+        List<Whisky> results = null;
+        Session session = entityManager.unwrap(Session.class);
+
+        try {
+            Criteria cr = session.createCriteria(Whisky.class);
+            cr.add(Restrictions.eq("age", age));
+            cr.add(Restrictions.eq("distillery.name", dist_name));
+            results = cr.list();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        } finally {
+            session.close();
+        }
+
+        return results;
+    }
 }
