@@ -40,7 +40,7 @@ public class DistilleryRepositoryImpl implements DistilleryRepositoryCustom {
 
         try {
             Criteria cr = session.createCriteria(Distillery.class);
-            cr.createAlias("whiskies", "w")
+            cr.createAlias("whiskies", "w");
             cr.add(Restrictions.eq("w.age", age));
             results = cr.list();
         } catch (Exception ex) {
