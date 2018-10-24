@@ -302,7 +302,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540393186679" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540393412130" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RunDashboard">
@@ -317,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.WhiskyTrackerApplicationTests.canGetWhiskyByDandA">
+  <component name="RunManager" selected="JUnit.WhiskyTrackerApplicationTests.canGetWhiskyByRegion">
     <configuration name="WhiskyTrackerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.codeclan.example.WhiskyTracker.WhiskyTrackerApplication" />
       <module name="WhiskyTracker" />
@@ -363,6 +363,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="WhiskyTrackerApplicationTests.canGetWhiskyByRegion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="WhiskyTracker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.codeclan.example.WhiskyTracker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.codeclan.example.WhiskyTracker" />
+      <option name="MAIN_CLASS_NAME" value="com.codeclan.example.WhiskyTracker.WhiskyTrackerApplicationTests" />
+      <option name="METHOD_NAME" value="canGetWhiskyByRegion" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WhiskyTrackerApplicationTests.canGetWhiskyByYear" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="WhiskyTracker" />
       <extension name="coverage">
@@ -384,9 +400,11 @@
       <item itemvalue="JUnit.WhiskyTrackerApplicationTests.canGetDistilleryByRegion" />
       <item itemvalue="JUnit.WhiskyTrackerApplicationTests.canGetWhiskyByYear" />
       <item itemvalue="JUnit.WhiskyTrackerApplicationTests.canGetWhiskyByDandA" />
+      <item itemvalue="JUnit.WhiskyTrackerApplicationTests.canGetWhiskyByRegion" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.WhiskyTrackerApplicationTests.canGetWhiskyByRegion" />
         <item itemvalue="JUnit.WhiskyTrackerApplicationTests.canGetWhiskyByDandA" />
         <item itemvalue="JUnit.WhiskyTrackerApplicationTests.canGetWhiskyByYear" />
         <item itemvalue="JUnit.WhiskyTrackerApplicationTests.canGetDistilleryByRegion" />
