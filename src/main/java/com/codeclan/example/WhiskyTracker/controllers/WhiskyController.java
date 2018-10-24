@@ -22,18 +22,18 @@ public class WhiskyController {
     @Autowired
     DistilleryRepository distilleryRepository;
 
-    @GetMapping(value = "whiskybyregion/{region}")
+    @GetMapping(value = "byregion/{region}")
     public List<Whisky> getWhiskyByRegion(@PathVariable String region) {
         return whiskyRepository.getWhiskyByRegion(region);
     }
 
-    @GetMapping(value = "whiskybyyear/{year}")
+    @GetMapping(value = "byyear/{year}")
     public List<Whisky> getWhiskyByYear(@PathVariable int year) {
         return whiskyRepository.getWhiskyByYear(year);
     }
 
-    @GetMapping(value = "whiskybydistandage/{dist}/{age}")
-    public List<Whisky> getWhiskyByDistilleryAndAge(@PathVariable String dist, int age) {
+    @GetMapping(value = "bydistandage/{dist}/{age}")
+    public List<Whisky> getWhiskyByDistilleryAndAge(@PathVariable String dist, @PathVariable int age) {
         return whiskyRepository.getWhiskyByDistilleryAndAge(dist, age);
     }
 
