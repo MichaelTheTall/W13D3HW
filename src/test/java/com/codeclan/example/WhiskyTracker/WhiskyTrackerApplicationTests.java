@@ -32,6 +32,11 @@ public class WhiskyTrackerApplicationTests {
 	}
 
 	@Test
+	public void canGetWhiskyByDandA(){
+		List<Whisky> results = whiskyRepository.getWhiskyByDistilleryAndAge("Rosebank", 12);
+	}
+
+	@Test
 	public void canGetDistilleryByRegion(){
 		List<Distillery> results = distilleryRepository.getDistilleryByRegion("Highland");
 	}
