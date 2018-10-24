@@ -15,8 +15,8 @@ import java.util.List;
 @RequestMapping(value = "/distilleries")
 public class DistilleryController {
 
-//    @Autowired
-//    WhiskyRepository whiskyRepository;
+    @Autowired
+    WhiskyRepository whiskyRepository;
 
     @Autowired
     DistilleryRepository distilleryRepository;
